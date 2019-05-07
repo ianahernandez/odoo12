@@ -26,7 +26,8 @@
         'security/ir.model.access.csv',
         #'views/views.xml',
         #'views/templates.xml',
-        'views/library_book_view.xml'
+        'views/library_book_view.xml',
+        'views/library_book_category_view.xml'
     ],
     'application': True,
     'installable': True,
