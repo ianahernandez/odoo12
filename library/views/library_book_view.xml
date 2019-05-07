@@ -8,8 +8,9 @@
                 <form string="Formulario de libros">
                     <sheet>
                         <group>
-                            <field name="name" default="NEW" />
+                            <field name="name"/>
                             <field name="description"/>
+                            <field name="isbn"/>
                             <field name="category_ids" widget="many2many_tags"/>
                         </group>
                     </sheet>
