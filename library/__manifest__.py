@@ -23,10 +23,12 @@
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
+        'security/ir.model.access.csv',
         #'views/views.xml',
         #'views/templates.xml',
+        'views/library_book_view.xml'
     ],
+    'application': True,
     'installable': True,
     # only loaded in demonstration mode
 
