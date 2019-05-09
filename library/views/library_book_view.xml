@@ -13,6 +13,9 @@
                             <field name="isbn"/>
                             <field name="category_ids" widget="many2many_tags"/>
                         </group>
+                        <group>
+                            <field name="categ_count"></field>
+                        </group>
                     </sheet>
                 </form>
             </field>
@@ -27,6 +30,7 @@
                     <field name="name"/>
                     <field name="description"/>
                     <field name="category_ids" widget="many2many_tags"/>
+                    <field name="categ_count"></field>
                 </tree>
             </field>
         </record>

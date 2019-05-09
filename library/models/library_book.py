@@ -10,6 +10,16 @@ class LibraryBook(models.Model):
     description = fields.Text(string="Description")
     isbn = fields.Char(string="ISBN")
 
+    # ==== Campos calculados ======
+    # Nuemero de categorias asociadas al libro
+    categ_count = fields.Integer(
+        string="Nro de categorías",
+        compute="_count_categ"
+    )
+    def _count_categ(self):
+        for book in self:
+            book.categ_count = len(book.category_ids)
+
     # ===== Python constraint =====
     #Importar la libreria api y exceptions
     @api.constrains('isbn')
