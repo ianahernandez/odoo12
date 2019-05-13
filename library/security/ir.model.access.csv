@@ -1,3 +1,7 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_library_library,library.book,model_library_book,,1,1,1,1
-access_library_category,library.category,model_library_category,,1,1,1,0
+access_library_book_user,access.library.book.user,model_library_book,library.group_library_user,1,1,1,1
+access_library_book_manager,access.library.book.manager,model_library_book,library.group_library_manager,1,1,1,1
+access_library_category_user,"access.library.category.user
+",model_library_category,,1,1,1,1
+access_library_category_category,"access.library.category.manager
+",model_library_category,,1,1,1,1
