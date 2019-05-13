@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="library_book_1" model="library.book">
+            <field name="name">Backbone and JQuery</field>
+            <field name="isbn">1234568</field>
+        </record>
+
+        <record id="library_book_2" model="library.book">
+            <field name="name">Curso Tecnico Odoo 12</field>
+            <field name="isbn">123459</field>
+        </record>
+    </data>
+</odoo>

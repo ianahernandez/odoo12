@@ -54,7 +54,7 @@
         <menuitem id="library_root"
                   name="Library"
                   sequence="1"
-                  groups="library.group_library_user,library.group_library_manager"/>
+                  groups="library.group_library_user"/>
         <menuitem id="library_category" name="Libraries" sequence="1" parent="library_root"/>
         <menuitem id="library_book"
                   name="Book"
