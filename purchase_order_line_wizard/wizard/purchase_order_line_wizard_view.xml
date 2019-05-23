@@ -1,0 +1,34 @@
+<odoo>
+    <data>
+        <record id="purchase_order_line_wizard_form" model="ir.ui.view">
+            <field name="name">purchase.order.line.wizard.form</field>
+            <field name="model">purchase.order.line.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Wizard Form">
+                    <sheet>
+                        <group>
+                            <field name="supplier_id" string="Proveedor"/>
+                            <field name="order_line_ids"/>
+                        </group>
+                    </sheet>
+                    <footer>
+                        <button string="Aceptar" name="create_purchase" type="object" class="btn-primary"/>
+                        <button string="Cancelar" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <act_window
+                id="action_purchase_order_line_wizard"
+                multi="True"
+                key2="client_action_multi"
+                name="Crear pedido"
+                res_model="purchase.order.line.wizard"
+                src_model="purchase.order.line"
+                view_type="form"
+                view_mode="form"
+                target="new"/>
+
+    </data>
+</odoo>
